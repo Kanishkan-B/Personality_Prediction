@@ -7,7 +7,7 @@ import base64
 warnings.filterwarnings('ignore')
 
 # Load the model
-loaded_model = pickle.load(open("milk_model.sav", 'rb'))
+loaded_model = pickle.load(open("personality_model.sav", 'rb'))
 
 # Function to add background from a local file
 def add_bg_from_local(image_file):
@@ -28,7 +28,7 @@ def add_bg_from_local(image_file):
     )
 
 # Use your local image file path
-add_bg_from_local("Bc.jpg")
+add_bg_from_local("Back_Ground.jpg")
 
 # Prediction function
 def personality_prediction(input_data):
